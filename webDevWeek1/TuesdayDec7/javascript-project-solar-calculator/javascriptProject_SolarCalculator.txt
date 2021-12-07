@@ -1,0 +1,12 @@
+Covering:
+    1. Functions
+        a. loops
+        b. Switch and Select
+        c. Interrogating the DOM
+        d. Solar Calculator
+
+Exploring Functions:
+    1. Create a Function
+    2. Call a Function
+    3. Passing Values In
+    4. Returning Values
