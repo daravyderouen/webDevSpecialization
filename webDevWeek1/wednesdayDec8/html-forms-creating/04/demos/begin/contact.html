@@ -38,10 +38,12 @@
         </aside>
         <main id="main">
            <h1>Contact Us</h1>
+           <fieldset>
+               <legend>Contact Information</legend>
            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
-                Your name: <input type="text" name="customerName"><br/>
+                Your name: <input type="text" name="customerName" required minlength="10" maxlength="75"><br/>
                 Your email: <input type="email" name="customerEmail"><br/>
-                Your phone: <input type="tel" name="customerPhone">
+                Your phone: <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone">
                 <input type="radio" name="phoneType" value="cell">Cell
                 <input type="radio" name="phoneType" value="work">Work
                 <input type="radio" name="phoneType" value="home">Home
@@ -52,8 +54,10 @@
                 <input type="checkbox" name="okToContact" value="email"> by email
                 <br/>
                 <input type="hidden" name="source" value="ContactForm">
-                Your feedback:</br><textarea name="feedbackText" cols="40" rows="3"></textarea><br />
-                
+
+
+                 <fieldset>Your feedback:</br><textarea name="feedbackText" cols="40" rows="3" required></textarea><br />
+                    <legend>Feedback</legend>
                 Feedback type: <select name="feedbackType" multiple="multiple" size="6">
                     <optgroup label="Stores">
                     <option value="webstore">Web Store</option>
@@ -67,7 +71,8 @@
                 Severity: <input type="number" min="1" max="10" name="severity"><br/>
                 Issue date: <input type="date" name="issueDate"><br/>
                 Issue time: <input type="time" name="issueTime"><br/>
-                
+                </fieldset>
+
                 <input type="submit" value="SendContact">
             </form>
         </main>

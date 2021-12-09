@@ -38,7 +38,44 @@
         </aside>
         <main id="main">
            <h1>Contact Us</h1>
-           
+           <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Contact Information</legend>
+            <label for="nameField">Your name:</label><input id="nameField" type="text" name="customerName"></br>
+            <label for="emailField">Your email:</label><input type="email" name="customerEmail"></br>
+            <label for="phoneField">Your phone:</label><input type="tel" name="customerPhone"></br>
+            <label><input type="radio" name="phoneType" value="cell" >Cell</label>
+            <label><input type="radio" name="phoneType" value="work" >Work</label>
+            <label><input type="radio" name="phoneType" value="home" >Home</label>
+            <br />
+            Ok to contact me: 
+            <input type="checkbox" name="okToContactMe"> by phone
+            <input type="checkbox" name="okToContactMe"> by email
+            <input type="hidden" name="source" value="ContactForm"><br/>
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+                <legend>Feedback</legend>
+             <br /> <textarea tabindex="1" name="feedText" cols="40" rows="3" name="feedbacktext"></textarea><br />
+            feedBack type: <select tabindex="2" name="feedBackType" multiple="6">
+            <optgroup label="Store">
+                <option value="webstore">Web Store</option>
+                <option value="store">Physical Store</option>
+            </optgroup>
+                <option value="webtech">Website Issue</option>
+                <option value="general">General Feedback</option>
+                </select><br/>
+            Severity: <input tabindex="3" type="range" min="1" max="10" severityRange> <br />
+            Severity: <input tabindex="4"type="number" name="severity" min="1" max="10"> <br />
+            issue date: <input tabindex="5" type="date" name="issueDate"> <br />
+            issue time: <input tabindex="6" type="time" name="issueTime">
+            </fieldset>
+
+            <input type="submit" value="SendContact">
+            <!--added lines 41 - 75-->
+           </form>
         </main>
 
         <footer>
