@@ -9,7 +9,7 @@
 //Cloned the folder
 
 //Using Template Literals
-
+//make one long string and use backticks, $ and {}
 
 //Create a Tagged Templace Literal
 
