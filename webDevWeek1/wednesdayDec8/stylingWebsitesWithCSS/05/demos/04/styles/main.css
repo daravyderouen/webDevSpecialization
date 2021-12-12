@@ -115,3 +115,19 @@
  #sidebar-heading {
      font-size: 24px;
  }
+
+ #leftmenu a {
+    color: #199175; 
+ }
+
+ #leftmenu a:hover {
+    color: #3cecc3; 
+}
+
+tr:nth-of-type(odd) {
+    background-color: #b4ddd3;
+}
+
+tr:nth-of-type(even) {
+    background-color: #E0D7EF;
+}
