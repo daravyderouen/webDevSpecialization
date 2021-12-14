@@ -245,4 +245,201 @@ function countE () {
 }
 
 // THE SEQUENCE OF ENTRY //
-// > countE () now if we call our countE function, with no parameters, we would get a small pop up window from out website that says, which phrase would you like to examine? 
+// > countE () now if we call our countE function, with no parameters, we would get a small pop up window from out website that says, which phrase would you like to examine? If we do "Excellent elephants" which has a few "E"s in it, you can see. Once we enter that phrase, the countE function will proceed, there's 5 E's in excellent elephants. 
+
+///// TRACING OUR E-COUNTER  //////
+
+// Following our function's code as it counts E's in "Excellent elephants!"
+//index//Loop: index < length// charAt(index)//is charAt(index) an E or e? // eCount//
+// 0   //    TRUE           //     E        //             True           //    1
+//  1 //      TRUE          //     x        //            FALSE           //    1  //
+// 2  //       TRUE         //     C        //            FALSE          //    1   //
+// 3  //      TRUE         //      e        //             TRUE          //   2   //
+// 4 //       TRUE         //     l         //            FALSE          //   2   // 
+// 5 //       TRUE         //     L         //             FALSE         //   2   // 
+// 6 //       TRUE         //      e        //             TRUE           //   3   // 
+// 7  //       TRUE        //      n        //             FALSE          //   3   //  
+
+/////////////// and so on
+
+// 18 //       TRUE        //      s        //             FALSE           //  5   // 
+// 19 //       TRUE        //      !         //             FALSE           //  5   //
+// 20 //       FALSE       //      STOP !!!!!---------------->
+
+/*  The first thing that will happen is that we check whether the index is less than    the length so that we don't go over the edge of the string. 
+    For index 0, it's true, the character at that index is a capital E. So when we ask the question is the character at that index a capital E or lowercase E, we get a truth value from out complex conditional, so our eCount is instantly turned to 1 . */
+
+/*As the loop continues, this procedure will occur for every character, including spaces and punctuations. And when we finally get to the index that just passed the end of the string, we get a false value from the loop condition and stop the loop. The function will instantly return an eCount of 5. */
+
+
+//////////////// UNDERSTANDING LOCAL AND GLOBAL SCOPE   /////////////////
+
+//        VISUALIZING WORLD WITHIN WORLDS              //
+
+
+let x = 6;  // x & y up here, in the main program, the scope is "global", which means the variables declared are potentially accessible from everywhere. 
+let y = 4; 
+
+function add (a, b) {
+    let x = a + b;  // but here: inside functions, the scope is "local", like cities within state. EAch has their own "government" and stuff happens in here stays here.
+    return x;
+}
+
+function subtract (a, b) {
+    y = a - b;
+    return y;
+}
+
+// You can think of global and local scope being like the the global planet Earth having many nations. And within each of the nations, they have their own government and their own way of doing things. 
+
+
+////////////// FUNCTIONS CREATE A NEW lOCAL SCOPE   //////////////////
+
+//    Variables declared in a function STAY in the function //
+// IE//
+let x = 6//outside the function, declare variable equal to 6
+function add (a, b) { //but inside new function add, 
+    let x = a + b;//<-- renamed new variable x and set = to parameters a + b
+    return x; // a variable keyword on that x
+}
+// when that happens in a local scope, an entirely new variable is created with the name x that is only accessible to the function block for add. So here you can see that if we called the add function and passed in the value 9 and 2, add itself would return 11
+
+add(9, 2); //prints 11
+
+/* BUT  if we console.log(x)<--variable 'x', we would still get 6 and that's because the internal variable x that got set that got equal to a + b did not modify the variable. */
+
+/*The circled variable only exists in the function's local scope. Because it has been declared with let, it doesn't modify the same named variable "outside" the function. */
+
+//// Need to becareful in JavaScript because if you don't declare the variable 'x', JS thinks that you mean the global variable on the outside of the function. 
+
+// i.e//
+let x = 6 // here x is still declared outside the function 
+function add (a, b) {
+    x = a + b;// but inside we no longer have a declared new variable x and instead just used the name x. 
+    return x; 
+}
+add (9, 2) // if we call the add function here with 9 and 2, the add function    would return 11  
+console.log(x) // when we log out the x variable, its value has been changed to 11
+
+// It is important to declare your variables carefully and know the relationship between the local and global scopes in JavaScript.
+
+// If the x were not declared with let, it would "shadow" the same-named variable from the nearest external scope.
+
+
+
+
+//////////// VISUALIZING LOCAL AND GLOBAL SCOPE     //////////////
+//      worlds within worlds     ///
+
+let x = 6; 
+let y = 4; 
+function add (a, b) {
+    let x = a + b;
+    return x;
+}
+function subtract (a, b) {
+    y = a - b;
+    return y;
+}
+
+/* PROGRAM */
+/* variables: x, y */
+/* functions: add, subtract */
+
+// add//
+// parameters:
+// a(local), b(local)
+
+// variables:
+// x(local)
+
+// If our program had the variables x and y and the functions add and subtract. We know that the add function would create its own local scope with the parameters a, which is local to the function.
+
+//subtract//
+// parameters:
+// a(local), b(local)
+
+// variables:
+// y(global)
+
+// Now lets take a look at the subtract function, it also has local parameters a and b. But when it uses the variable y, it is the global variable y that it modifies. How can we tell that in the code? There is no variable keyword next to the y inside of subtract.
+
+
+
+
+
+
+//// PROBLEM SOLVING WITH FUNCTIONS 1 /////
+/*
+The Park Rangers in Death Valley National Park divide up the feed responsibilities daily for the Bighorn Sheep population. Each sheep needs 2 lbs of ranger-provided food per day. We need a function to alert how many lbs of food each Park Ranger should load that day, based on the number of sheep and the number of rangers available.
+
+
+Let's start by building a function called feedPerRanger. This function should accept two parameters: one representing the current population of sheep, and one for the number of rangers available during the day.
+
+
+Inside the function, multiply the sheep population by 2 and divide it by the number of rangers. Assign the result to a new variable called feedPerRanger.
+
+Finish coding the function by displaying an alert with the following format:
+
+Each ranger should load *number* lbs of feed today.
+
+Replace *number* with the value for the variable feedPerRanger.
+ 
+ */
+
+function feedPerRanger (a, b) {
+    let feedPerRanger= (a*2)/b 
+    alert("Each ranger should load" + feedPerRanger + "lbs of feed today.")
+  }    
+  
+
+
+  ////// PROBLEM SOLVING WITH FUNCTIONS II //////////
+
+  /*
+  Back at the Hoover Dam, the technicians have decided they want more control of which generators are _on_ and off. They’ve asked us to develop a way to adjust the total megawatts generated upon the switch-on or switch-off of a single, chosen generator.
+
+
+  Define a new function named changePowerTotal that takes the following four parameters:
+
+The total power generated.
+The generator _ID_ for the current generator.
+The generator status.
+The amount of power produced by the current generator.
+
+Inside the function, add an if statement checking if the status is equal to the string "on".
+
+
+If the status is "on", add the amount of power for that generator to the total power generated and display an alert in the following format:
+
+Generator #2 is now on, adding 62 MW, for a total of 62 MW!
+
+
+
+Now let's add an else if statement that will run if the current generator status is "off".
+
+
+If the current generator's status is "off", subtract the amount of power for that generator from the total power generated and display an alert in the following format:
+
+Generator #2 is now off, removing 62 MW, for a total of 0 MW!
+
+
+
+Finally, return the total power generated.
+
+  
+  */
+
+function changePowerTotal (total_power, generatorID, generatorStatus, amount_of_power) {
+    if (generatorStatus == "on"){
+      generatorID = amount_of_power + total_power
+      alert("Generator 2 is now on, adding" + amount_of_power + " for a total of" + total_power)
+    } else {
+    if (generatorStatus == "off") {
+        generatorID = amount_of_power - total_power 
+          alert(" Generator 2 is now off removing" + amount_of_power + "for a total of" + total_power+"!")
+        
+      }
+      total_power = generatorID - amount_of_power
+    }return total_power;
+  }
