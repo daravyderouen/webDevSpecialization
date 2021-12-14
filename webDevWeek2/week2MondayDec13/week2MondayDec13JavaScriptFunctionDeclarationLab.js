@@ -135,3 +135,114 @@ sumOfCubes( 1+2, 3+5); // two expressions as parameters, same thing as sumOfCube
 // we can also use variables as parameters:
 let x = 3
 sumOfCubes(x*2, x*4); // this sumOfCubes would be the same as sumOfCubes(6, 12) prints 1494
+
+
+/// Challenge A Basic Multiplication Function //
+function multiplyTrio (a, b, c) {
+    return a*b*c;
+  }
+  
+  multiplyTrio(3, 4, 5);
+
+
+  // MORE DECLARATIONS //
+  function maxOfTwo(a, b) {
+    if(a > b){
+      return a
+    } else {
+    } return b
+  }
+
+// Refactoring for Efficiency and Legibility //
+//Let's refactor our mystery function. The result will remain the same but the implementation will now use one statement, instead of multiple statements.
+
+//Rewrite the body of the mystery function so that there is a single return statement and no declared variables.
+
+  function mystery(x, y) {
+    //let a = 4 * x * y;
+    //let b = 3 * y + 5;
+    //let c =(4*x*y)+(3*y+5);
+    return (4*x*y)+(3*y+5);
+  }
+
+
+
+
+  ///// NOW FOR A MORE COMPLEX FUNCTION! ////
+
+  // LET'S DESIGN A FUNCTION THAT COUNTS "E"s IN A USER ENTERED PHRASE//
+
+  // We'll combine the built-in-function of level 5 with with our declared function of level 6.
+
+  // first establish a function key word with out new functions name. 
+
+
+  function countE () {//this fn don't need parameters
+    // ask user for a phrase to check
+    /* then if that entry is invalid- */ { //(ALWAYS CHECK THAT  A USER INPUT IS VALID BEFORE ANY OPERATIONS)
+    // ALERT THE USER
+    //EXIT FUNCTION with a failure report <-- use the return keyword here will allow us to exit and inform the program of an invalid entry
+  } /* otherwise, if the entry is valid */{ //<- this block will be where the function begins to actually check the phrase out and count the E's 
+    //* make a counter for the E's*/
+    /* for each character in the user's entry*/{
+    /*if that character is a capital 'E' or a lowercase 'e'*/{ // *increment the E encounter
+
+            }
+    //(then have a for loop that goes over each character in the user's entry.)
+        }
+        /*alert the amount of E's in the phrase and return success*/
+    }
+
+}
+
+// FILLING THE COUNTE() WITH CODE //
+// HOW CAN WE GET THE BEHAVIOR WE'VE DESCRIBED IN OUR PSEUDO FUNCTION?
+// we'll establish a variable called phrase and assign to that the results of a prompt function that  
+
+function countE () {
+    let phrase = prompt("Which phrase would you like to examine?")
+    /*The prompt() method helps us get the user's entry */
+    /*Then if that entry is valid,we will know because the phrase variable is a string.  */
+    if(typeof(phrase) != "string"){
+    /*The typeOf keyword allows us to determine whether the user has entered a valid string. This != expression returns true or false */
+        alert("That's not a valid entry!");
+        return false; // if the entry is not a string, wer alert the user and exit the function, returning false.
+    } else { // else-block helps us do the "otherwise" case!
+            let eCount = 0; //establish a variable called eCount that gets set to the value 0, because we don't know how many E's are in our phrase.
+            for(let index = 0; index < phrase.length; index++){ //we make the for loop which will start at the very first index of the phrase. 
+                /*(index<phrase.length)<-- we want to start at index 0, and go until one less than the length of the user's string. Remember that strings have zero-based indices */
+                if(phrase.charAt(index) == 'e' || phrase.charAt(index) == 'E') {
+                    eCount++;
+                    /*inside the loop, we have a complex confitional  (phrase.charAt(index)=='E' <-- This comples conditional checks whether the spot we're currently at along the string is either an E or an e.)*/
+                }
+                /*eCount++ <-- if we found one, we'll increase our counter. */
+                //once that loop is entirely complete, we will have the     amount of E's in that phrase. 
+            }
+            alert("There are"+ eCount +"E's in \"" + phrase + "\".");
+            return true;
+        //After our for loop, eCount will contain the total number of E's and e's in our loop. Then we can return true which instantly exit the function.
+    }   
+    
+}
+  
+
+// rewrite the function//
+function countE () {
+    let phrase = prompt("Which phrase would you like to examine?");
+    if(typeof(phrase) != "string") {
+        alert("That's not a valid entry!");
+        return false;
+    } else {
+        let eCount = 0;
+        for(let index =0; index <phrase.length; index++) {
+            if(phrase.charAt(index) == 'e' || phrase.charAt(index) == 'E') {
+                eCount++;
+            }
+        }
+        alert("There are" + ecount + "E's in \"" + phrase + "\".")
+        return true;
+    }
+}
+
+// THE SEQUENCE OF ENTRY //
+// > countE () now if we call our countE function, with no parameters, we would get a small pop up window from out website that says, which phrase would you like to examine? 
