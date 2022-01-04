@@ -1,0 +1,137 @@
+Unit 1: Coding Fundamentals 1: 
+Mon: Orientation + Software Development
+https://eloquentjavascript.net/03_functions.html
+Tues: Running Code
+https://geekflare.com/command-line-cheat-sheets/ 
+https://git-scm.com/doc
+Wed: Making Decisions 1 
+https://pythontutor.com/visualize.html#mode=edit
+Thurs: Making Decisions 2 (new lecture) 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+https://launchschool.com/books/git/read/introduction
+https://launchschool.com/books/git/read/cheatsheets
+Fri: New Assessment (not yet created) + Agile Theory Lecture (new lecture) 
+https://learn.akamai.com/en-us/webhelp/netstorage/netstorage-user-guide/GUID-BE143989-A94E-4AAC-86B3-0A5651D6C460.html
+https://devconnected.com/how-to-delete-a-github-repository/
+Unit 2: Coding Fundamentals 2 
+Mon: Functions 1 
+	https://leetcode.com/problemset/all/
+https://www.codewars.com/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+Tues: Object Orientation 
+https://codeburst.io/javascript-quickie-dot-notation-vs-bracket-notation-333641c0f781
+Wed: Functions 2 (new lecture) 
+https://coderwall.com/p/zedwtw/shorthand-string-to-number-js
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+https://codeburst.io/javascript-breaking-down-the-shortest-possible-fizzbuzz-answer-94a0ad9d128a
+Thurs: Design 
+https://developers.google.com/web/fundamentals/accessibility
+https://www.figma.com/community/plugin/745330164019088593/Zeplin
+https://www.awwwards.com/
+https://alistapart.com/topics/
+https://www.webdesignerdepot.com/
+Fri: New Assessment (not yet created) + OO Theory Lecture (new lecture) 
+Unit 3: Front-End Web 
+Mon: HTML & CSS 1 (new lecture) 
+	https://www.w3schools.com/html/html_accessibility.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+https://accessibility.psu.edu/images/imageshtml/
+https://www.w3schools.com/cssref/pr_margin.asp
+https://helpdeskgeek.com/how-to/open-an-html-file-in-google-chrome/
+Tues: HTML & CSS 2 (new lecture)  
+https://flexboxfroggy.com/
+https://www.w3.org/WAI/WCAG2AAA-Conformance
+Wed: Interactivity 1
+https://www.freecodecamp.org/news/node-module-exports-explained-with-javascript-export-function-examples/
+Thurs: Interactivity 2 
+https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+Fri: New Assessment (not yet created) + Semantic Web Theory & How The Web Works Intro Lecture (new lecture) 
+Unit 4: Back-End Web 
+Mon: Back End 1 
+https://stackoverflow.com/questions/63423584/how-to-fix-error-nodemon-ps1-cannot-be-loaded-because-running-scripts-is-disabl
+https://github.com/linnovate/mean/issues/1066
+https://newbedev.com/express-module-not-found-when-installed-with-npm
+https://expressjs.com/
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+Learn CORS In 6 Minutes
+https://www.npmjs.com/package/axios
+https://www.realpythonproject.com/a-cheat-sheet-for-javascripts-axios/
+https://www.pluralsight.com/guides/axios-vs-fetch
+https://opensource.com/article/18/10/common-network-ports
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+https://medium.com/@LindaVivah/the-beginners-guide-understanding-node-js-express-js-fundamentals-e15493462be1
+Tues: Back End 2 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+http://www.codingthearchitecture.com/2014/11/19/what_is_a_monolith.html
+https://www.youtube.com/watch?v=ACI8EDbaXzo
+Wed: APIs 
+Character encodings for beginners
+https://www.freecodecamp.org/news/what-is-an-api-and-how-to-test-it/
+Thurs: Cybersecurity & Cryptology 
+http://highschool.spsd.org/crypt/about.html
+https://www.101computing.net/enigma-machine-emulator/
+Fri: Assessment + How The Web Works Theory Lecture (reduced version of previous HTWW lecture) (edited)
+Unit 5: Data & Databases 
+Mon: SQL 1 
+https://www.w3schools.com/sql/default.asp
+https://github.com/sasha-alias/sqltabs/wiki/SQL-Tabs-documentation#running-sql
+Tues: Data Modeling 
+https://www.dbdesigner.net/
+Wed: SQL 2 
+https://www.sqlshack.com/sql-multiple-joins-for-beginners-with-examples/
+Thurs: Data with Python
+https://medium.com/geekculture/javascript-vs-python-syntax-cheatsheet-9bc7c59599c6 
+https://www.pythoncheatsheet.org/
+Fri: Assessment + NoSQL & Normalization + Referential Integrity Theory Lecture (new lecture) 
+Unit 6: QA & DevOps 
+Mon: QA & Testing (combination of previous 2 lectures) 
+https://glossary.istqb.org/en/search/
+https://www.softwaretestinghelp.com/test-summary-report-template-download-sample/
+https://jestjs.io/docs/getting-started
+https://devhints.io/jest
+https://jestjs.io/docs/using-matchers
+https://github.com/sapegin/jest-cheat-sheet
+Tues: Automation
+https://create-react-app.dev/docs/running-tests/ 
+https://jestjs.io/docs/en/ecmascript-modules
+https://jestjs.io/docs/en/configuration.html
+Wed: Deployment 
+Check logs in Heroku to assess reasons for deployment errors
+Not Found - make sure paths are correct 
+Thurs: DevOps
+https://docs.rollbar.com/docs/nodejs
+https://github.com/rollbar/rollbar.js/
+https://rollbar.com/developer/
+Fri: Assessment + CI/CD Theory Lecture (new lecture mostly derived from CI/CD content from previous DevOps lecture) 
+Unit 7: Computer Science 
+Mon: CompSci 1 (Algorithms - new lecture) 
+https://en.wikipedia.org/wiki/Algorithm
+https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheBubbleSort.html
+https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco?hl=en
+https://eloquentjavascript.net/03_functions.html
+https://github.com/chaudharyachint08/Self-Learning/blob/master/BOOKS/DSA%20%26%20Competitive%20Programming/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf
+https://youtu.be/kPRA0W1kECg
+Tues: CompSci 2 (Big O) 
+https://visualgo.net/en/sorting?slide=1
+Big O Notation
+https://www.bigocheatsheet.com/
+Lecture2 Algorithms - Asymptotic Analysis by stanford university courseera
+https://runestone.academy/runestone/books/published/pythonds/AlgorithmAnalysis/WhatIsAlgorithmAnalysis.html
+https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/
+https://www.baeldung.com/cs/space-complexity
+Wed: CompSci 3 (Data Structures) 
+https://runestone.academy/runestone/books/published/pythonds/BasicDS/ImplementinganUnorderedListLinkedLists.html
+https://runestone.academy/runestone/books/published/pythonds/index.html
+Thurs: CompSci 4 (History of Computer Science - new lecture) 
+https://overapi.com/
+Fri: New Assessment (not yet created) + Computer Memory Theory Lecture (new lecture) 
+Unit 8: Conclusion & Portfolios 
+Mon: Project Build Out 
+https://www.lcn.com/blog/beginners-guide-favicons/
+https://webplatform.github.io/docs/css/functions/url/
+Tues: Demo Prep 
+https://www.screentogif.com/
+Wed: Personal Portfolio Creation 
+https://www.freecodecamp.org/news/ace-your-first-year-as-a-junior-developer-with-this-advice-bbc68b6fe2d9/
+https://codeburst.io/10-best-pieces-of-advice-for-becoming-a-successful-junior-developer-c6f4b40de143
